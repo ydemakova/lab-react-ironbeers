@@ -6,6 +6,7 @@ import AllBeers from './components/AllBeers';
 import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
 import Header from './components/Header';
+import NotFound from './components/NotFound';
 import { useLocation } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} exact></Route>
         <Route path="/beers" element={<AllBeers />} exact></Route>
+        <Route path="/beers/:id" element={<NotFound />} exact></Route>
         <Route path="/random-beer" element={<RandomBeer />} exact></Route>
         <Route path="/new-beer" element={<NewBeer />} exact></Route>
       </Routes>
