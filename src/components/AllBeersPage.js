@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Beer from './Beer';
 
-export default function AllBeers() {
+export default function AllBeersPage() {
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {

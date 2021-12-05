@@ -4,7 +4,7 @@ import beersImage from '../assets/beers.png';
 import newBeerImage from '../assets/new-beer.png';
 import randomBeerImage from '../assets/random-beer.png';
 
-export default function () {
+export default function HomePage() {
   const description =
     'Ipsum et ipsum nisi consequat Lorem velit nulla anim cillum proident.';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import AllBeers from './components/AllBeers';
-import RandomBeer from './components/RandomBeer';
-import NewBeer from './components/NewBeer';
+import HomePage from './components/HomePage';
+import AllBeersPage from './components/AllBeersPage';
+import BeerDetailPage from './components/BeerDetailPage';
+import NewBeerPage from './components/NewBeerPage';
 import Header from './components/Header';
-import NotFound from './components/NotFound';
+import NotFoundPage from './components/NotFoundPage';
 import { useLocation } from 'react-router-dom';
 
 function App() {
@@ -16,11 +16,12 @@ function App() {
     <main>
       {pathname !== '/' && <Header />}
       <Routes>
-        <Route path="/" element={<Home />} exact></Route>
-        <Route path="/beers" element={<AllBeers />} exact></Route>
-        <Route path="/beers/:id" element={<NotFound />} exact></Route>
-        <Route path="/random-beer" element={<RandomBeer />} exact></Route>
-        <Route path="/new-beer" element={<NewBeer />} exact></Route>
+        <Route path="/" element={<HomePage />} exact></Route>
+        <Route path="/beers" element={<AllBeersPage />} exact></Route>
+        <Route path="/beers/:id" element={<BeerDetailPage />} exact></Route>
+        <Route path="/random-beer" element={<BeerDetailPage />} exact></Route>
+        <Route path="/new-beer" element={<NewBeerPage />} exact></Route>
+        <Route path="*" element={<NotFoundPage />} exact></Route>
       </Routes>
     </main>
   );
