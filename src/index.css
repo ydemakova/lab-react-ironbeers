@@ -1,4 +1,11 @@
-body {
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 main {
@@ -11,7 +18,7 @@ code {
     monospace;
 }
 
-.home-link h2 {
+h2 {
   font-size: 1.4rem;
   text-align: center;
 }
@@ -42,5 +49,24 @@ code {
 }
 
 .beer .info h2 {
-  font-size: 1.4rem;
+  text-align: left;
+}
+
+.beer-detail-page {
+  text-align: center;
+}
+
+.beer-detail-page .image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.beer-detail-page .image img {
+  height: 400px;
+  width: auto;
+}
+
+.beer-detail-page .info p {
+  margin: 0.5rem 0;
 }
