@@ -16,11 +16,10 @@ function App() {
       {pathname !== '/' && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} exact></Route>
-        <Route path="/beers" element={<AllBeersPage />} exact></Route>
-        <Route path="/beers/:id" element={<BeerDetailPage />} exact></Route>
-        <Route path="/random-beer" element={<BeerDetailPage />} exact></Route>
-        <Route path="/new-beer" element={<NewBeerPage />} exact></Route>
-        <Route path="*" element={<NotFoundPage />} exact></Route>
+        <Route path="/beers" element={<AllBeersPage />}></Route>
+        <Route path="/beers/:id" element={<BeerDetailPage />}></Route>
+        <Route path="/new-beer" element={<NewBeerPage />}></Route>
+        <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
     </main>
   );

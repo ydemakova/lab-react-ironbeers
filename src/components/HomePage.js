@@ -17,7 +17,7 @@ export default function HomePage() {
         image={beersImage}
       />
       <HomeLink
-        to="/random-beer"
+        to="/beers/random"
         title="Random Beer"
         description={description}
         image={newBeerImage}

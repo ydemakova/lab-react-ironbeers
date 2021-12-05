@@ -12,7 +12,7 @@ export default function BeerDetailPage() {
       const res = await axios.get(url);
       setBeer(res.data);
     })();
-  });
+  }, [id]);
 
   if (beer) {
     return (
